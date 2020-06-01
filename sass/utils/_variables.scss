@@ -1,0 +1,52 @@
+$font-sizes: (
+    logo: 3rem,
+    footer: 1.5rem,
+);
+$primary-color: #559c84;
+$primary-font-color: #fdcb46;
+
+$enchanted-note-primary-font-family: 'Segoe print', sans serif;
+$french-chic-primary-font-family: 'Noto Serif', serif;
+$taste-buds-delight-primary-font-family: 'Segoe print', sans serif;
+$palette-of-taste-primary-font-family: 'Segoe print', sans serif;
+
+$enchanted-note-title-font-family: 'Devonshire', cursive;
+$french-chic-title-font-family: 'Croissant One', cursive;
+$taste-buds-delight-title-font-family: 'Dancing Script', cursive;
+$palette-of-taste-title-font-family: 'Kaushan Script', cursive;
+
+$menus: (
+    enchanted-note: (
+        bg-color: #FCDFDB,
+        primary-font-color: #3D1319,
+        primary-font: $enchanted-note-primary-font-family,
+        title-font: $enchanted-note-title-font-family,
+        menu-path-color: #3D1319,
+    ),
+    french-chic: (
+        bg-color: #FFF5FE,
+        primary-font-color: #C67412,
+        primary-font: $french-chic-primary-font-family,
+        title-font: $french-chic-title-font-family,
+        menu-word-color: #C67412,
+        menu-dish-color: #A56799,
+        menu-dessert-color: #6E4CCC,
+        menu-starter-path-color: #C67412,
+        menu-dish-path-color: #A56799,
+        menu-dessert-path-color: #6E4CCC,
+    ),
+    taste-buds-delight: (
+        bg-color: #F8F8F8,
+        primary-font-color: black,
+        primary-font: $taste-buds-delight-primary-font-family,
+        title-font: $taste-buds-delight-title-font-family,
+        menu-word-color: #0887FB,
+    ),
+    palette-of-taste: (
+        bg-color: rgb(249, 255, 249),
+        primary-font-color: black,
+        primary-font: $palette-of-taste-primary-font-family,
+        title-font: $palette-of-taste-title-font-family,
+        menu-word-color: #72BF56,
+    ),    
+);

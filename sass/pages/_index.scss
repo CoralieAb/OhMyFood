@@ -1,0 +1,37 @@
+.menu__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.menu__prev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    max-height: 500px;
+    margin: 1.5rem;
+    -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
+    box-shadow: 0 0 10px 3px #D8D8D8;
+    cursor: pointer;
+    @include styles-menus;
+    //&--french-chic {
+        //color entrée barres+titre+txt+menu #C67412
+        //color plat barres+titre+txt rgb 165,103,153
+        //color dessert barres+titre+txt rgb 110,76,204
+    //}
+    //&--taste-buds-delight {
+        //color entrée barres rgb 2,40,221
+        //color plat barres rgb 6,112,243
+        //color dessert barres rgb 34,157,249
+        //color titre+txt black
+    //}
+    //&--palette-of-taste {
+        //color 1 titre pp+barres rgb 61,146,58 tsl 79,104,96
+        //color 2 titre pp+barres rgb 190,255,127 tsl 60,240,180
+        //color titre+txt black
+    //}
+}

@@ -1,0 +1,22 @@
+.menu--enchanted-note {
+    .menu__path {
+        //-webkit-clip-path: polygon(43% 58%, 74% 54%, 100% 57%, 100% 67%, 75% 68%, 23% 67%, 0 70%, 2% 56%);
+        //clip-path: polygon(43% 58%, 74% 54%, 100% 57%, 100% 67%, 75% 68%, 23% 67%, 0 70%, 2% 56%);
+        //-webkit-clip-path: polygon(44% 54%, 75% 54%, 98% 57%, 100% 67%, 68% 67%, 30% 68%, 0 66%, 0 57%);
+        //clip-path: polygon(44% 54%, 75% 54%, 98% 57%, 100% 67%, 68% 67%, 30% 68%, 0 66%, 0 57%);
+        width: 30%;
+        svg {
+            width: 100%;
+        }
+    }
+    .menu__section {
+        padding: 0 2rem;
+        ul {
+            padding: 0;
+        }
+    }
+    .menu__footer {
+        display: flex;
+        justify-content: center;
+    }
+}

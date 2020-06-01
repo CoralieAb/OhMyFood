@@ -1,0 +1,64 @@
+
+@mixin gradient ($deg, $color1, $color2) {
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background: linear-gradient($deg, $color1, $color2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin styles-menus {
+    @each $style, $type in $menus {
+        &--#{$style} {
+            background-color: map-get($type, bg-color);
+            color: map-get($type, primary-font-color);
+            font-family: map-get($type, primary-font);
+            @if ($style == "enchanted-note") {
+                .menu {
+                    &__heading, &__footer__heading {
+                        font-family: map-get($type, title-font);
+                    }
+                    &__word {
+                        text-transform: uppercase;
+                    }
+                }
+                .semiquaver {
+                    width: 25%;
+                }
+            }@else if ($style == "french-chic"){
+                .menu {
+                    &__heading {
+                        @include gradient(90deg, #E38913, #8F5BFE);
+                        font-family: map-get($type, title-font);
+                    }
+                    &__dish {
+                        color: map-get($type, menu-dish-color);                        
+                    }
+                    &__dessert {
+                        color: map-get($type, menu-dessert-color);
+                    }
+                }
+            }@else if ($style == "taste-buds-delight") {
+                .menu {
+                    &__heading {
+                        @include gradient(90deg, #0925DB, #42A5FF);
+                        font-family: map-get($type, title-font);
+                    }
+                    &__word {
+                        color: map-get($type, menu-word-color);
+                    }
+                }  
+            }@else if ($style == "palette-of-taste") {
+                .menu {
+                    &__heading {
+                    @include gradient(90deg, #3D923A, #BEFF7F);
+                    font-family: map-get($type, title-font);
+                    }
+                    &__word {
+                        color: map-get($type, menu-word-color);
+                    }
+                }
+            }
+        }
+    }
+}

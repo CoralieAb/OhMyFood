@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /*logo-font et primary-font*/
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap'); /*enchanted-note font*/
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap'); /*french-chic font*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); /*taste-buds-delight font*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); /*palette-of-taste font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /*french-chic menu-font*/
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./layout/header";
+@import "./layout/container";
+@import "./layout/menus";
+@import "./layout/footer";
+@import "./pages/index";
+@import "./pages/enchanted-note";
+@import "./pages/french-chic";
+@import "./pages/taste-buds-delight";
+@import "./pages/palette-of-taste";
