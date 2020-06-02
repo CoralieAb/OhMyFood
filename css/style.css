@@ -21,12 +21,12 @@ body {
   background-color: #559c84;
   color: #fdcb46;
   padding: 1rem 0;
-  margin-bottom: 1.5rem;
 }
 .header__logo {
   margin: 0;
   text-align: center;
   font-weight: 700;
+  letter-spacing: -0.1rem;
   font-size: 3rem;
 }
 
@@ -36,92 +36,37 @@ body {
   align-items: center;
   max-width: 1000px;
   margin: auto;
-  padding-bottom: 3rem;
+  padding: 2rem 0 5rem 0;
+}
+.container__heading {
+  margin-bottom: 0;
+}
+.container .previously {
+  background-color: #559c84;
+  color: #fdcb46;
+  font-size: 1.5rem;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 748px;
-  height: 848px;
-  max-height: 848px;
-  margin: 0 1.5rem;
-  padding: 0 1.5rem;
+  min-height: 1058px;
+  margin: 1.5rem;
+  padding: 0 2rem 0 2rem;
   -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
   box-shadow: 0 0 10px 3px #D8D8D8;
 }
-.menu--enchanted-note {
-  background-color: #FCDFDB;
-  color: #3D1319;
-  font-family: "Segoe print", sans serif;
-}
-.menu--enchanted-note .menu__heading, .menu--enchanted-note .menu__footer__heading {
-  font-family: "Devonshire", cursive;
-}
-.menu--enchanted-note .menu__word {
-  text-transform: uppercase;
-}
-.menu--enchanted-note .semiquaver {
-  width: 25%;
-}
-.menu--french-chic {
-  background-color: #FFF5FE;
-  color: #C67412;
-  font-family: "Noto Serif", serif;
-}
-.menu--french-chic .menu__heading {
-  background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
-  background: linear-gradient(90deg, #E38913, #8F5BFE);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Croissant One", cursive;
-}
-.menu--french-chic .menu__dish {
-  color: #A56799;
-}
-.menu--french-chic .menu__dessert {
-  color: #6E4CCC;
-}
-.menu--taste-buds-delight {
-  background-color: #F8F8F8;
-  color: black;
-  font-family: "Segoe print", sans serif;
-}
-.menu--taste-buds-delight .menu__heading {
-  background: -webkit-linear-gradient(90deg, #0925DB, #42A5FF);
-  background: linear-gradient(90deg, #0925DB, #42A5FF);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Dancing Script", cursive;
-}
-.menu--taste-buds-delight .menu__word {
-  color: #0887FB;
-}
-.menu--palette-of-taste {
-  background-color: #f9fff9;
-  color: black;
-  font-family: "Segoe print", sans serif;
-}
-.menu--palette-of-taste .menu__heading {
-  background: -webkit-linear-gradient(90deg, #3D923A, #BEFF7F);
-  background: linear-gradient(90deg, #3D923A, #BEFF7F);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Kaushan Script", cursive;
-}
-.menu--palette-of-taste .menu__word {
-  color: #72BF56;
-}
 .menu__header {
-  text-align: center;
+  margin: 5rem 0;
 }
-.menu__footer {
-  text-align: center;
+.menu__heading {
+  margin: 0;
+  padding: 0 1rem;
+  font-weight: normal;
 }
 .menu__content {
   width: 100%;
@@ -133,17 +78,32 @@ body {
 }
 .menu__section__title {
   margin: 0;
+  font-weight: normal;
 }
 .menu__section ul {
   list-style-type: none;
   padding: 0 4rem;
+  margin: 1.8rem 0 4rem 0;
 }
 .menu__section li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.menu__section p {
-  margin: 0.5rem 0;
+.menu__name {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+.menu__price {
+  margin: 0.2rem 0;
+  font-size: 1.2rem;
+}
+.menu__footer__heading {
+  margin: 0;
+}
+.menu__footer .semiquaver {
+  width: 10%;
+  height: auto;
 }
 
 .footer {
@@ -151,8 +111,8 @@ body {
   position: fixed;
   bottom: 0;
   background-color: #559c84;
-  padding: 0.5rem 0;
-  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-size: 1.2rem;
 }
 .footer .nav {
   display: flex;
@@ -184,6 +144,15 @@ body {
   box-shadow: 0 0 10px 3px #D8D8D8;
   cursor: pointer;
 }
+.menu__prev .menu__heading {
+  margin: 0 0 1rem 0;
+  padding: 0 1rem;
+}
+.menu__prev .menu__word {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
 .menu__prev--enchanted-note {
   background-color: #FCDFDB;
   color: #3D1319;
@@ -191,6 +160,8 @@ body {
 }
 .menu__prev--enchanted-note .menu__heading, .menu__prev--enchanted-note .menu__footer__heading {
   font-family: "Devonshire", cursive;
+  font-size: 2rem;
+  font-weight: normal;
 }
 .menu__prev--enchanted-note .menu__word {
   text-transform: uppercase;
@@ -210,12 +181,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Croissant One", cursive;
-}
-.menu__prev--french-chic .menu__dish {
-  color: #A56799;
-}
-.menu__prev--french-chic .menu__dessert {
-  color: #6E4CCC;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 .menu__prev--taste-buds-delight {
   background-color: #F8F8F8;
@@ -229,9 +196,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Dancing Script", cursive;
+  font-size: 2rem;
 }
 .menu__prev--taste-buds-delight .menu__word {
   color: #0887FB;
+  font-weight: normal;
 }
 .menu__prev--palette-of-taste {
   background-color: #f9fff9;
@@ -245,11 +214,32 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  font-weight: normal;
 }
 .menu__prev--palette-of-taste .menu__word {
   color: #72BF56;
+  font-weight: normal;
 }
 
+.menu--enchanted-note {
+  background-color: #FCDFDB;
+  color: #3D1319;
+  font-family: "Segoe print", sans serif;
+}
+.menu--enchanted-note .menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+.menu--enchanted-note .menu__header .semiquaver {
+  width: 30%;
+}
+.menu--enchanted-note .menu__heading {
+  font-family: "Devonshire", cursive;
+  font-size: 2.7rem;
+}
 .menu--enchanted-note .menu__path {
   width: 30%;
 }
@@ -257,23 +247,77 @@ body {
   width: 100%;
 }
 .menu--enchanted-note .menu__section {
-  padding: 0 2rem;
+  padding: 0 2.5rem;
+}
+.menu--enchanted-note .menu__section__title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .menu--enchanted-note .menu__section ul {
   padding: 0;
 }
+.menu--enchanted-note .menu__price {
+  font-weight: bold;
+}
 .menu--enchanted-note .menu__footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
+}
+.menu--enchanted-note .menu__footer__heading {
+  font-family: "Devonshire", cursive;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.menu--enchanted-note .menu__footer .semiquaver {
+  width: 10%;
 }
 
+.menu--french-chic {
+  background-color: #FFF5FE;
+  color: #C67412;
+  font-family: "Noto Serif", serif;
+}
+.menu--french-chic .menu__heading {
+  background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
+  background: linear-gradient(90deg, #E38913, #8F5BFE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 2.3rem;
+}
+.menu--french-chic .menu__section__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 .menu--french-chic .menu__path {
   width: 30%;
 }
 .menu--french-chic .menu__path svg {
   width: 100%;
 }
+.menu--french-chic .menu__dish {
+  color: #A56799;
+}
+.menu--french-chic .menu__dessert {
+  color: #6E4CCC;
+}
 
+.menu--taste-buds-delight {
+  background-color: #F8F8F8;
+  color: black;
+  font-family: "Segoe print", sans serif;
+}
+.menu--taste-buds-delight .menu__heading {
+  background: -webkit-linear-gradient(90deg, #0925DB, #42A5FF);
+  background: linear-gradient(90deg, #0925DB, #42A5FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
 .menu--taste-buds-delight .menu__path {
   width: 30%;
 }
@@ -281,8 +325,22 @@ body {
   width: 100%;
 }
 
+.menu--palette-of-taste {
+  background-color: #f9fff9;
+  color: black;
+  font-family: "Segoe print", sans serif;
+}
+.menu--palette-of-taste .menu__heading {
+  background: -webkit-linear-gradient(90deg, #3D923A, #BEFF7F);
+  background: linear-gradient(90deg, #3D923A, #BEFF7F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+  font-size: 4rem;
+}
 .menu--palette-of-taste .menu__path {
-  width: 30%;
+  width: 35%;
 }
 .menu--palette-of-taste .menu__path svg {
   width: 100%;

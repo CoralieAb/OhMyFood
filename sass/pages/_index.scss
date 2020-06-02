@@ -17,21 +17,84 @@
     -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
     box-shadow: 0 0 10px 3px #D8D8D8;
     cursor: pointer;
-    @include styles-menus;
-    //&--french-chic {
-        //color entrée barres+titre+txt+menu #C67412
-        //color plat barres+titre+txt rgb 165,103,153
-        //color dessert barres+titre+txt rgb 110,76,204
-    //}
-    //&--taste-buds-delight {
-        //color entrée barres rgb 2,40,221
-        //color plat barres rgb 6,112,243
-        //color dessert barres rgb 34,157,249
-        //color titre+txt black
-    //}
-    //&--palette-of-taste {
-        //color 1 titre pp+barres rgb 61,146,58 tsl 79,104,96
-        //color 2 titre pp+barres rgb 190,255,127 tsl 60,240,180
-        //color titre+txt black
-    //}
+    .menu {
+        &__heading {
+            margin: 0 0 1rem 0;
+            padding: $padding-heading;
+        }
+        &__word {
+            margin: 0;
+            font-weight: bold;
+            font-size: map-get($font-sizes, menu-word);
+        }
+    }
+    &--enchanted-note {
+        $menu-style: map-get($menus, enchanted-note);
+        background-color: map-get($menu-style, bg-color);
+        color: map-get($menu-style, primary-font-color);
+        font-family: map-get($menu-style, primary-font);
+        .menu {
+            &__heading, &__footer__heading {
+                font-family: map-get($menu-style, title-font);
+                font-size: 2rem;
+                font-weight: normal;
+            }
+            &__word {
+                text-transform: uppercase;
+            }
+        }
+        .semiquaver {
+            width: 25%;
+        }
+    }
+    &--french-chic {
+        $menu-style: map-get($menus, french-chic);
+        background-color: map-get($menu-style, bg-color);
+        color: map-get($menu-style, primary-font-color);
+        font-family: map-get($menu-style, primary-font);
+        .menu {
+            &__heading {
+                @include gradient(90deg, #E38913, #8F5BFE);
+                font-family: map-get($menu-style, title-font);
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+        }     
+    }
+    &--taste-buds-delight {
+        $menu-style: map-get($menus, taste-buds-delight);
+        background-color: map-get($menu-style, bg-color);
+        color: map-get($menu-style, primary-font-color);
+        font-family: map-get($menu-style, primary-font);
+        .menu {
+            &__heading {
+                @include gradient(90deg, #0925DB, #42A5FF);
+                font-family: map-get($menu-style, title-font);
+                font-size: 2rem;
+            }
+            &__word {
+                color: map-get($menu-style, menu-word-color);
+                font-weight: normal;
+            }
+        }
+    }
+    &--palette-of-taste {
+        $menu-style: map-get($menus, palette-of-taste);
+        background-color: map-get($menu-style, bg-color);
+        color: map-get($menu-style, primary-font-color);
+        font-family: map-get($menu-style, primary-font);
+        .menu {
+            &__heading {
+                @include gradient(90deg, #3D923A, #BEFF7F);
+                font-family: map-get($menu-style, title-font);
+                font-size: 2rem;
+                font-weight: normal;
+            }
+            &__word {
+                color: map-get($menu-style, menu-word-color);
+                font-weight: normal;
+            }
+        }
+    }
+    
 }

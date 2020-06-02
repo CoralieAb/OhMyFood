@@ -4,5 +4,15 @@
     align-items: center;
     max-width: 1000px;
     margin: auto;
-    padding-bottom: 3rem;
+    padding: 2rem 0 5rem 0;
+    &__heading {
+        margin-bottom: 0;
+    }
+    .previously {
+        background-color: $primary-color;
+        color: $primary-font-color;
+        font-size: map-get($font-sizes, p);
+        padding: 0.7rem 2rem;
+        border-radius: 10px;
+    }
 }

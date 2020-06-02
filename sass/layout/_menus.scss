@@ -1,21 +1,21 @@
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     width: 748px;
-    height: 848px;
-    max-height: 848px;
-    margin: 0 1.5rem;
-    padding: 0 1.5rem;
+    min-height: 1058px;
+    margin: 1.5rem;
+    padding: 0 2rem 0 2rem;
     -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
     box-shadow: 0 0 10px 3px #D8D8D8;
-    @include styles-menus;
     &__header {
-        text-align: center;;
+        margin: 5rem 0;
     }
-    &__footer {
-        text-align: center;;
+    &__heading {
+        margin: 0;
+        padding: $padding-heading;
+        font-weight: normal;
     }
     &__content {
         width: 100%;
@@ -28,17 +28,34 @@
         }
         &__title {
             margin: 0;
+            font-weight: normal;
         }
         ul {
             list-style-type: none;
             padding: 0 4rem;
+            margin: 1.8rem 0 4rem 0;
         }
         li {
             display: flex;
             justify-content: space-between;
-        }
-        p {
-            margin: 0.5rem 0;
+            align-items: center;
         }
     }
+    &__name {
+        margin: 0.2rem 0;
+        font-size: 1rem;
+    }
+    &__price {
+        margin: 0.2rem 0;
+        font-size: 1.2rem;
+    }
+    &__footer {
+        &__heading {
+            margin: 0;
+        }
+        .semiquaver{
+            width: 10%;
+            height: auto;
+        }
+    }  
 }

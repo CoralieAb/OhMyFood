@@ -1,12 +1,29 @@
 .menu--french-chic {
-    .menu__path {
-        //-webkit-clip-path: polygon(87% 39%, 93% 51%, 100% 57%, 93% 63%, 87% 75%, 0 57%);
-        //clip-path: polygon(87% 39%, 93% 51%, 100% 57%, 93% 63%, 87% 75%, 0 57%);
-        //-webkit-clip-path: polygon(13% 39%, 7% 51%, 0 57%, 7% 63%, 13% 75%, 100% 57%);
-        //clip-path: polygon(13% 39%, 7% 51%, 0 57%, 7% 63%, 13% 75%, 100% 57%);
-        width: 30%;
-        svg {
-            width: 100%;
+    $menu-style: map-get($menus, french-chic);
+    background-color: map-get($menu-style, bg-color);
+    color: map-get($menu-style, primary-font-color);
+    font-family: map-get($menu-style, primary-font);
+    .menu {
+        &__heading {
+            @include gradient(90deg, #E38913, #8F5BFE);
+            font-family: map-get($menu-style, title-font);
+            font-size: 2.3rem;
+        }
+        &__section__title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        &__path {
+            width: 30%;
+            svg {
+                width: 100%;
+            }
+        }
+        &__dish {
+            color: map-get($menu-style, menu-dish-color);                        
+        }
+        &__dessert {
+            color: map-get($menu-style, menu-dessert-color);
         }
     }
 }

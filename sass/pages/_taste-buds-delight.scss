@@ -1,12 +1,19 @@
 .menu--taste-buds-delight {
-    .menu__path {
-        //-webkit-clip-path: polygon(87% 39%, 93% 51%, 100% 57%, 93% 63%, 87% 75%, 0 57%);
-        //clip-path: polygon(87% 39%, 93% 51%, 100% 57%, 93% 63%, 87% 75%, 0 57%);
-        //-webkit-clip-path: polygon(13% 39%, 7% 51%, 0 57%, 7% 63%, 13% 75%, 100% 57%);
-        //clip-path: polygon(13% 39%, 7% 51%, 0 57%, 7% 63%, 13% 75%, 100% 57%);
-        width: 30%;
-        svg {
-            width: 100%;
+    $menu-style: map-get($menus, taste-buds-delight);
+    background-color: map-get($menu-style, bg-color);
+    color: map-get($menu-style, primary-font-color);
+    font-family: map-get($menu-style, primary-font);
+    .menu {
+        &__heading {
+            @include gradient(90deg, #0925DB, #42A5FF);
+            font-family: map-get($menu-style, title-font);
+            font-size: 4rem;
+        }
+        &__path {
+            width: 30%;
+            svg {
+                width: 100%;
+            }
         }
     }
 }
