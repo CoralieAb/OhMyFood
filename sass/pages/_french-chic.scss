@@ -19,6 +19,9 @@
                 width: 100%;
             }
         }
+        &__name {
+            margin: 0.5rem 0;
+        }
         &__dish {
             color: map-get($menu-style, menu-dish-color);                        
         }

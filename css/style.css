@@ -91,11 +91,11 @@ body {
   align-items: center;
 }
 .menu__name {
-  margin: 0.2rem 0;
+  margin: 0.4rem 0;
   font-size: 1rem;
 }
 .menu__price {
-  margin: 0.2rem 0;
+  margin: 0;
   font-size: 1.2rem;
 }
 .menu__footer__heading {
@@ -296,6 +296,9 @@ body {
 }
 .menu--french-chic .menu__path svg {
   width: 100%;
+}
+.menu--french-chic .menu__name {
+  margin: 0.5rem 0;
 }
 .menu--french-chic .menu__dish {
   color: #A56799;
