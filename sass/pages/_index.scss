@@ -2,7 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin: auto;
+    @media screen and (max-width: 870px) {
+        flex-direction: column;
+        width: 100%
+    }
 }
 
 .menu__prev {
@@ -17,6 +22,10 @@
     -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
     box-shadow: 0 0 10px 3px #D8D8D8;
     cursor: pointer;
+    @media screen and (max-width: 870px) {
+        width: 90%;
+        margin: 1rem;
+    }
     .menu {
         &__heading {
             margin: 0 0 1rem 0;
@@ -43,8 +52,12 @@
                 text-transform: uppercase;
             }
         }
-        .semiquaver {
-            width: 25%;
+        figure {
+            margin: 0;
+            width: 20%;
+            .semiquaver {
+                width: 100%;
+            }
         }
     }
     &--french-chic {
@@ -58,6 +71,9 @@
                 font-family: map-get($menu-style, title-font);
                 font-size: 1.5rem;
                 font-weight: normal;
+                @media screen and (max-width: 470px) {
+                    font-size: 1.3rem;
+                }
             }
         }     
     }
@@ -95,6 +111,5 @@
                 font-weight: normal;
             }
         }
-    }
-    
+    }    
 }

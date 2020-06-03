@@ -8,11 +8,11 @@
             @include gradient(90deg, #3D923A, #BEFF7F);
             font-family: map-get($menu-style, title-font);
             font-size: 4rem;
-        }
-        &__path {
-            width: 35%;
-            svg {
-                width: 100%;
+            @media screen and (max-width: 870px) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: 470px) {
+                font-size: 2rem;
             }
         }
     }

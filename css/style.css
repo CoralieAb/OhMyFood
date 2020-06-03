@@ -36,10 +36,10 @@ body {
   align-items: center;
   max-width: 1000px;
   margin: auto;
-  padding: 2rem 0 5rem 0;
+  padding: 2rem 0 4.5rem 0;
 }
 .container__heading {
-  margin-bottom: 0;
+  margin: 0;
 }
 .container .previously {
   background-color: #559c84;
@@ -47,6 +47,11 @@ body {
   font-size: 1.5rem;
   padding: 0.7rem 2rem;
   border-radius: 10px;
+}
+@media screen and (max-width: 470px) {
+  .container .previously {
+    font-size: 1.2rem;
+  }
 }
 
 .menu {
@@ -56,12 +61,25 @@ body {
   width: 748px;
   min-height: 1058px;
   margin: 1.5rem;
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem;
   -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
   box-shadow: 0 0 10px 3px #D8D8D8;
 }
+@media screen and (max-width: 870px) {
+  .menu {
+    width: 85%;
+    margin: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
 .menu__header {
-  margin: 5rem 0;
+  margin: 3rem 0;
+}
+@media screen and (max-width: 870px) {
+  .menu__header {
+    margin: 2rem 0;
+  }
 }
 .menu__heading {
   margin: 0;
@@ -71,32 +89,72 @@ body {
 .menu__content {
   width: 100%;
 }
+.menu__path {
+  width: 30%;
+}
+.menu__path svg {
+  width: 100%;
+}
 .menu__section__heading {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
+@media screen and (max-width: 870px) {
+  .menu__section__heading {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .menu__section__title {
   margin: 0;
+  font-size: 1.3rem;
   font-weight: normal;
+}
+@media screen and (max-width: 870px) {
+  .menu__section__title {
+    font-size: 1rem;
+  }
+}
+.menu__section__name {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+@media screen and (max-width: 470px) {
+  .menu__section__name {
+    font-size: 0.9rem;
+  }
+}
+.menu__section__price {
+  margin: 0;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 470px) {
+  .menu__section__price {
+    font-size: 1rem;
+  }
 }
 .menu__section ul {
   list-style-type: none;
   padding: 0 4rem;
   margin: 1.8rem 0 4rem 0;
 }
+@media screen and (max-width: 870px) {
+  .menu__section ul {
+    margin: 0.9rem 0 2rem 0;
+    padding: 0;
+  }
+}
 .menu__section li {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu__name {
-  margin: 0.4rem 0;
-  font-size: 1rem;
-}
-.menu__price {
-  margin: 0;
-  font-size: 1.2rem;
+@media screen and (max-width: 870px) {
+  .menu__section li {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .menu__footer__heading {
   margin: 0;
@@ -114,6 +172,11 @@ body {
   padding: 1rem 0;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 470px) {
+  .footer {
+    font-size: 0.96rem;
+  }
+}
 .footer .nav {
   display: flex;
   justify-content: space-between;
@@ -128,7 +191,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: auto;
+}
+@media screen and (max-width: 870px) {
+  .menu__grid {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .menu__prev {
@@ -143,6 +213,12 @@ body {
   -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
   box-shadow: 0 0 10px 3px #D8D8D8;
   cursor: pointer;
+}
+@media screen and (max-width: 870px) {
+  .menu__prev {
+    width: 90%;
+    margin: 1rem;
+  }
 }
 .menu__prev .menu__heading {
   margin: 0 0 1rem 0;
@@ -166,8 +242,12 @@ body {
 .menu__prev--enchanted-note .menu__word {
   text-transform: uppercase;
 }
-.menu__prev--enchanted-note .semiquaver {
-  width: 25%;
+.menu__prev--enchanted-note figure {
+  margin: 0;
+  width: 20%;
+}
+.menu__prev--enchanted-note figure .semiquaver {
+  width: 100%;
 }
 .menu__prev--french-chic {
   background-color: #FFF5FE;
@@ -183,6 +263,11 @@ body {
   font-family: "Croissant One", cursive;
   font-size: 1.5rem;
   font-weight: normal;
+}
+@media screen and (max-width: 470px) {
+  .menu__prev--french-chic .menu__heading {
+    font-size: 1.3rem;
+  }
 }
 .menu__prev--taste-buds-delight {
   background-color: #F8F8F8;
@@ -231,37 +316,50 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem 0;
 }
-.menu--enchanted-note .menu__header .semiquaver {
-  width: 30%;
+.menu--enchanted-note .menu__header figure {
+  margin: 0;
+  width: 25%;
+}
+.menu--enchanted-note .menu__header figure .semiquaver {
+  width: 100%;
 }
 .menu--enchanted-note .menu__heading {
   font-family: "Devonshire", cursive;
   font-size: 2.7rem;
 }
-.menu--enchanted-note .menu__path {
-  width: 30%;
-}
-.menu--enchanted-note .menu__path svg {
-  width: 100%;
+@media screen and (max-width: 470px) {
+  .menu--enchanted-note .menu__heading {
+    font-size: 2rem;
+  }
 }
 .menu--enchanted-note .menu__section {
   padding: 0 2.5rem;
 }
+@media screen and (max-width: 870px) {
+  .menu--enchanted-note .menu__section {
+    padding: 0;
+  }
+}
 .menu--enchanted-note .menu__section__title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 870px) {
+  .menu--enchanted-note .menu__section__title {
+    font-size: 1.1rem;
+  }
+}
+.menu--enchanted-note .menu__section__price {
   font-weight: bold;
 }
 .menu--enchanted-note .menu__section ul {
   padding: 0;
 }
-.menu--enchanted-note .menu__price {
-  font-weight: bold;
-}
 .menu--enchanted-note .menu__footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 3rem;
 }
 .menu--enchanted-note .menu__footer__heading {
@@ -269,14 +367,26 @@ body {
   font-size: 2rem;
   font-weight: normal;
 }
-.menu--enchanted-note .menu__footer .semiquaver {
+.menu--enchanted-note .menu__footer figure {
+  margin: 0;
   width: 10%;
+}
+.menu--enchanted-note .menu__footer figure .semiquaver {
+  width: 100%;
 }
 
 .menu--french-chic {
   background-color: #FFF5FE;
   color: #C67412;
   font-family: "Noto Serif", serif;
+}
+.menu--french-chic .menu__header {
+  margin: 4rem 0;
+}
+@media screen and (max-width: 870px) {
+  .menu--french-chic .menu__header {
+    margin: 3rem 0 2rem 0;
+  }
 }
 .menu--french-chic .menu__heading {
   background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
@@ -287,17 +397,25 @@ body {
   font-family: "Croissant One", cursive;
   font-size: 2.3rem;
 }
+@media screen and (max-width: 870px) {
+  .menu--french-chic .menu__heading {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .menu--french-chic .menu__heading {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 870px) {
+  .menu--french-chic .menu__path {
+    margin: 0.2rem 0;
+  }
+}
 .menu--french-chic .menu__section__title {
-  font-size: 1.3rem;
   font-weight: bold;
 }
-.menu--french-chic .menu__path {
-  width: 30%;
-}
-.menu--french-chic .menu__path svg {
-  width: 100%;
-}
-.menu--french-chic .menu__name {
+.menu--french-chic .menu__section__name {
   margin: 0.5rem 0;
 }
 .menu--french-chic .menu__dish {
@@ -321,11 +439,15 @@ body {
   font-family: "Dancing Script", cursive;
   font-size: 4rem;
 }
-.menu--taste-buds-delight .menu__path {
-  width: 30%;
+@media screen and (max-width: 870px) {
+  .menu--taste-buds-delight .menu__heading {
+    font-size: 3rem;
+  }
 }
-.menu--taste-buds-delight .menu__path svg {
-  width: 100%;
+@media screen and (max-width: 470px) {
+  .menu--taste-buds-delight .menu__heading {
+    font-size: 2rem;
+  }
 }
 
 .menu--palette-of-taste {
@@ -342,11 +464,15 @@ body {
   font-family: "Kaushan Script", cursive;
   font-size: 4rem;
 }
-.menu--palette-of-taste .menu__path {
-  width: 35%;
+@media screen and (max-width: 870px) {
+  .menu--palette-of-taste .menu__heading {
+    font-size: 3rem;
+  }
 }
-.menu--palette-of-taste .menu__path svg {
-  width: 100%;
+@media screen and (max-width: 470px) {
+  .menu--palette-of-taste .menu__heading {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

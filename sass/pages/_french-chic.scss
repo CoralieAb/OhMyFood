@@ -4,23 +4,35 @@
     color: map-get($menu-style, primary-font-color);
     font-family: map-get($menu-style, primary-font);
     .menu {
+        &__header {
+            margin: 4rem 0;
+            @media screen and (max-width: 870px) {
+                margin: 3rem 0 2rem 0;
+            }
+        }
         &__heading {
             @include gradient(90deg, #E38913, #8F5BFE);
             font-family: map-get($menu-style, title-font);
             font-size: 2.3rem;
-        }
-        &__section__title {
-            font-size: 1.3rem;
-            font-weight: bold;
-        }
-        &__path {
-            width: 30%;
-            svg {
-                width: 100%;
+            @media screen and (max-width: 870px) {
+                font-size: 1.7rem;
+            }
+            @media screen and (max-width: 470px) {
+                font-size: 1.3rem;
             }
         }
-        &__name {
-            margin: 0.5rem 0;
+        &__path {
+            @media screen and (max-width: 870px) {
+                margin: 0.2rem 0;
+            }
+        }
+        &__section {
+            &__title {
+            font-weight: bold;
+            }
+            &__name {
+                margin: 0.5rem 0;
+            }
         }
         &__dish {
             color: map-get($menu-style, menu-dish-color);                        

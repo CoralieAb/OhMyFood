@@ -4,9 +4,9 @@
     align-items: center;
     max-width: 1000px;
     margin: auto;
-    padding: 2rem 0 5rem 0;
+    padding: 2rem 0 4.5rem 0;
     &__heading {
-        margin-bottom: 0;
+        margin: 0;
     }
     .previously {
         background-color: $primary-color;
@@ -14,5 +14,8 @@
         font-size: map-get($font-sizes, p);
         padding: 0.7rem 2rem;
         border-radius: 10px;
+        @media screen and (max-width: 470px) {
+            font-size: map-get($font-sizes, p) *0.8;
+        }
     }
 }

@@ -5,6 +5,9 @@
     background-color: $primary-color;
     padding: 1rem 0;
     font-size: map-get($font-sizes, footer);
+    @media screen and (max-width: 470px) {
+        font-size: map-get($font-sizes, footer) *0.8;
+    }
     .nav {
         display: flex;
         justify-content: space-between;
