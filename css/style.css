@@ -17,6 +17,46 @@
   font-weight: normal;
   font-style: normal;
 }
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(-1px, -2px);
+  }
+  20% {
+    transform: translate(-3px, 0px);
+  }
+  30% {
+    transform: translate(3px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(-3px, 1px);
+  }
+  70% {
+    transform: translate(3px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  90% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(1px, -2px);
+  }
+}
+@keyframes dots {
+  50% {
+    opacity: 0;
+  }
+}
 body {
   min-height: 100vh;
   margin: auto;
@@ -47,18 +87,6 @@ body {
 }
 .container__heading {
   margin: 0;
-}
-.container .previously {
-  background-color: #559c84;
-  color: #fdcb46;
-  font-size: 1.5rem;
-  padding: 0.7rem 2rem;
-  border-radius: 10px;
-}
-@media screen and (max-width: 470px) {
-  .container .previously {
-    font-size: 1.2rem;
-  }
 }
 
 .menu {
@@ -176,7 +204,7 @@ body {
   position: fixed;
   bottom: 0;
   background-color: #559c84;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   font-size: 1.2rem;
 }
 @media screen and (max-width: 470px) {
@@ -193,6 +221,9 @@ body {
   text-decoration: none;
   color: #fdcb46;
 }
+.footer .nav__link:hover {
+  animation: wiggle 1s infinite;
+}
 
 .menu__grid {
   display: flex;
@@ -200,6 +231,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-bottom: 1rem;
 }
 @media screen and (max-width: 870px) {
   .menu__grid {
@@ -210,7 +242,6 @@ body {
 
 .menu__prev {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 350px;
@@ -219,7 +250,22 @@ body {
   margin: 1.5rem;
   -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
   box-shadow: 0 0 10px 3px #D8D8D8;
+  overflow: hidden;
   cursor: pointer;
+}
+.menu__prev .transition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 500ms;
+}
+.menu__prev .transition:hover {
+  opacity: 0.8;
+  transform: scale(1.25);
 }
 @media screen and (max-width: 870px) {
   .menu__prev {
@@ -312,6 +358,32 @@ body {
 .menu__prev--palette-of-taste .menu__word {
   color: #72BF56;
   font-weight: normal;
+}
+
+button {
+  background-color: #559c84;
+  color: #fdcb46;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  padding: 0.2rem 2rem 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
+}
+@media screen and (max-width: 470px) {
+  button {
+    font-size: 1.04rem;
+  }
+}
+button span {
+  font-size: 1.7rem;
+  display: inline-block;
+  animation: dots 2s ease-in-out infinite;
+}
+button span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+button span:nth-child(3) {
+  animation-delay: 0.8s;
 }
 
 .menu--enchanted-note {

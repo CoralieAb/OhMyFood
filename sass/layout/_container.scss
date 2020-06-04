@@ -8,14 +8,4 @@
     &__heading {
         margin: 0;
     }
-    .previously {
-        background-color: $primary-color;
-        color: $primary-font-color;
-        font-size: map-get($font-sizes, p);
-        padding: 0.7rem 2rem;
-        border-radius: 10px;
-        @media screen and (max-width: 470px) {
-            font-size: map-get($font-sizes, p) *0.8;
-        }
-    }
 }
