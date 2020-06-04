@@ -4,6 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); /*taste-buds-delight font*/
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); /*palette-of-taste font*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /*french-chic menu-font*/
+@font-face {
+    font-family: 'typo_comics_demoregular';
+    src: url('../fonts/webfontkit-20200603-104514/typo_comics_demo-webfont.eot');
+    src: url('../fonts/webfontkit-20200603-104514/typo_comics_demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfontkit-20200603-104514/typo_comics_demo-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-20200603-104514/typo_comics_demo-webfont.woff') format('woff'),
+         url('../fonts/webfontkit-20200603-104514/typo_comics_demo-webfont.ttf') format('truetype'),
+         url('../fonts/webfontkit-20200603-104514/typo_comics_demo-webfont.svg#typo_comics_demoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+};
 
 @import "./utils/variables";
 @import "./utils/mixins";
