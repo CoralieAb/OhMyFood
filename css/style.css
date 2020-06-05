@@ -1,1 +1,675 @@
-@import"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap";@import"https://fonts.googleapis.com/css2?family=Devonshire&display=swap";@import"https://fonts.googleapis.com/css2?family=Croissant+One&display=swap";@import"https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap";@import"https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap";@import"https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap";@import"https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap";@keyframes wiggle{0%{transform:translate(1px, 1px)}10%{transform:translate(-1px, -2px)}20%{transform:translate(-3px, 0px)}30%{transform:translate(3px, 2px)}40%{transform:translate(1px, -1px)}50%{transform:translate(-1px, 2px)}60%{transform:translate(-3px, 1px)}70%{transform:translate(3px, 1px)}80%{transform:translate(-1px, -1px)}90%{transform:translate(1px, 2px)}100%{transform:translate(1px, -2px)}}@keyframes dots{50%{opacity:0}}@keyframes underline-anim{0%{width:0%}100%{width:100%}}body{min-height:100vh;margin:auto;box-sizing:border-box;font-family:"Montserrat",sans-serif}body h1{color:#fdcb46;text-align:center;margin-top:0}body a{text-decoration:none}.header{background-color:#559c84;color:#fdcb46;padding:1rem 0}.header__logo{margin:0;text-align:center;font-weight:700;letter-spacing:-0.1rem;font-size:3rem;cursor:pointer}.container{display:flex;flex-direction:column;align-items:center;max-width:1000px;margin:auto;padding:2rem 0 4.5rem 0}.container__heading{margin:0}.menu{display:flex;flex-direction:column;align-items:center;width:748px;min-height:1058px;margin:1.5rem;padding:0 2rem;-webkit-box-shadow:0 0 8px 3px #d8d8d8;box-shadow:0 0 10px 3px #d8d8d8}@media screen and (max-width: 870px){.menu{width:85%;margin:1rem;padding:0 1rem;text-align:center}}.menu__header{margin:3rem 0}@media screen and (max-width: 870px){.menu__header{margin:2rem 0}}.menu__heading{margin:0;padding:0 1rem;font-weight:normal}.menu__content{width:100%}.menu__path{width:30%}.menu__path svg{width:100%}.menu__section__heading{display:flex;justify-content:space-between;align-items:baseline}@media screen and (max-width: 870px){.menu__section__heading{flex-direction:column;align-items:center}}.menu__section__title{margin:0;font-size:1.3rem;font-weight:normal}.menu__section__title hr{margin:0;height:2px;border:none;background-color:transparent}@media screen and (max-width: 870px){.menu__section__title{font-size:1rem}}.menu__section__name{margin:.4rem 0;font-size:1rem}@media screen and (max-width: 470px){.menu__section__name{font-size:.9rem}}.menu__section__price{margin:0;font-size:1.2rem}@media screen and (max-width: 470px){.menu__section__price{font-size:1rem}}.menu__section ul{list-style-type:none;padding:0 4rem;margin:1.8rem 0 4rem 0}@media screen and (max-width: 870px){.menu__section ul{margin:.9rem 0 2rem 0;padding:0}}.menu__section li{display:flex;justify-content:space-between;align-items:center}@media screen and (max-width: 870px){.menu__section li{flex-direction:column;align-items:center}}.menu__footer__heading{margin:0}.menu__footer .semiquaver{width:10%;height:auto}.footer{width:100%;position:fixed;bottom:0;background-color:#559c84;padding:.8rem 0;font-size:1.2rem}@media screen and (max-width: 470px){.footer{font-size:.96rem}}.footer .nav{display:flex;justify-content:space-between;padding:0 1rem}.footer .nav__link{color:#fdcb46}.footer .nav__link:hover{animation:wiggle 1s infinite}form{width:460px;background-color:#559c84;border:solid 2px #fdcb46;border-radius:50px;padding:2rem 2rem;box-sizing:border-box;font-size:1.3rem}form div{display:flex;flex-direction:column;margin:1rem 0;justify-content:center}form div label{padding-bottom:1rem;color:#fdcb46}form div input{border:solid 2px #fdcb46}form div textarea{height:150px;border:solid 2px #fdcb46}form .submit{width:70%;background-color:#fdcb46;color:#559c84;font-family:"Montserrat",sans-serif;font-size:1.3rem;padding:.2rem 2rem .5rem 2rem;border-radius:10px;border:none;align-self:center}@media screen and (max-width: 470px){form .submit{font-size:1.04rem}}@media screen and (max-width: 470px){form{width:90%}}.menu__grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;margin:auto;padding-bottom:1rem}@media screen and (max-width: 870px){.menu__grid{flex-direction:column;width:100%}}.menu__prev{display:flex;justify-content:center;align-items:center;width:350px;height:500px;max-height:500px;margin:1.5rem;-webkit-box-shadow:0 0 8px 3px #d8d8d8;box-shadow:0 0 10px 3px #d8d8d8;overflow:hidden;cursor:pointer}.menu__prev .transition{display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;height:100%;transform:scale(1);transition:transform 500ms}.menu__prev .transition:hover{opacity:.8;transform:scale(1.25)}@media screen and (max-width: 870px){.menu__prev{width:90%;margin:1rem}}.menu__prev .menu__heading{margin:0 0 1rem 0;padding:0 1rem}.menu__prev .menu__word{margin:0;font-weight:bold;font-size:2rem}.menu__prev--enchanted-note{background-color:#fcdfdb;color:#3d1319;font-family:"Segoe print","Architects Daughter",cursive,sans-serif}.menu__prev--enchanted-note .menu__heading,.menu__prev--enchanted-note .menu__footer__heading{font-family:"Devonshire",cursive;font-size:2rem;font-weight:normal}.menu__prev--enchanted-note .menu__word{text-transform:uppercase}.menu__prev--enchanted-note figure{margin:0;width:20%}.menu__prev--enchanted-note figure .semiquaver{width:100%}.menu__prev--french-chic{background-color:#fff5fe;color:#c67412;font-family:"Noto Serif",serif}.menu__prev--french-chic .menu__heading{background:-webkit-linear-gradient(90deg, #E38913, #8F5BFE);background:linear-gradient(90deg, #E38913, #8F5BFE);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:"Croissant One",cursive;font-size:1.5rem;font-weight:normal}@media screen and (max-width: 470px){.menu__prev--french-chic .menu__heading{font-size:1.3rem}}.menu__prev--taste-buds-delight{background-color:#f8f8f8;color:#000;font-family:"Segoe print","Architects Daughter",cursive,sans-serif}.menu__prev--taste-buds-delight .menu__heading{background:-webkit-linear-gradient(90deg, #0925DB, #42A5FF);background:linear-gradient(90deg, #0925DB, #42A5FF);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:"Dancing Script",cursive;font-size:2rem}.menu__prev--taste-buds-delight .menu__word{color:#0887fb;font-weight:normal}.menu__prev--palette-of-taste{background-color:#f9fff9;color:#000;font-family:"Segoe print","Architects Daughter",cursive,sans-serif}.menu__prev--palette-of-taste .menu__heading{background:-webkit-linear-gradient(90deg, #3D923A, #BEFF7F);background:linear-gradient(90deg, #3D923A, #BEFF7F);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:"Kaushan Script",cursive;font-size:2rem;font-weight:normal}.menu__prev--palette-of-taste .menu__word{color:#72bf56;font-weight:normal}button{background-color:#559c84;color:#fdcb46;font-family:"Montserrat",sans-serif;font-size:1.3rem;padding:.2rem 2rem .5rem 2rem;border-radius:10px;border:none}@media screen and (max-width: 470px){button{font-size:1.04rem}}button span{font-size:1.7rem;display:inline-block;animation:dots 2s ease-in-out infinite}button span:nth-child(2){animation-delay:.4s}button span:nth-child(3){animation-delay:.8s}.menu--enchanted-note{background-color:#fcdfdb;color:#3d1319;font-family:"Segoe print","Architects Daughter",cursive,sans-serif}.menu--enchanted-note .menu__header{display:flex;flex-direction:column;align-items:center}.menu--enchanted-note .menu__header figure{margin:0;width:25%}.menu--enchanted-note .menu__header figure .semiquaver{width:100%}.menu--enchanted-note .menu__heading{font-family:"Devonshire",cursive;font-size:2.7rem}@media screen and (max-width: 470px){.menu--enchanted-note .menu__heading{font-size:2rem}}.menu--enchanted-note .menu__section{padding:0 2.5rem}@media screen and (max-width: 870px){.menu--enchanted-note .menu__section{padding:0}}.menu--enchanted-note .menu__section__title{font-size:1.4rem;font-weight:bold}.menu--enchanted-note .menu__section__title:hover hr{background-color:#3d1319;animation:underline-anim 2s}@media screen and (max-width: 870px){.menu--enchanted-note .menu__section__title{font-size:1.1rem}.menu--enchanted-note .menu__section__title:hover hr{background:none}}.menu--enchanted-note .menu__section__price{font-weight:bold}.menu--enchanted-note .menu__section ul{padding:0}.menu--enchanted-note .menu__footer{display:flex;justify-content:center;align-items:center;margin-bottom:3rem}.menu--enchanted-note .menu__footer__heading{font-family:"Devonshire",cursive;font-size:2rem;font-weight:normal}.menu--enchanted-note .menu__footer figure{margin:0;width:10%}.menu--enchanted-note .menu__footer figure .semiquaver{width:100%}.menu--french-chic{background-color:#fff5fe;color:#c67412;font-family:"Noto Serif",serif}.menu--french-chic .menu__header{margin:4rem 0}@media screen and (max-width: 870px){.menu--french-chic .menu__header{margin:3rem 0 2rem 0}}.menu--french-chic .menu__heading{background:-webkit-linear-gradient(90deg, #E38913, #8F5BFE);background:linear-gradient(90deg, #E38913, #8F5BFE);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:"Croissant One",cursive;font-size:2.3rem}@media screen and (max-width: 870px){.menu--french-chic .menu__heading{font-size:1.7rem}}@media screen and (max-width: 470px){.menu--french-chic .menu__heading{font-size:1.3rem}}@media screen and (max-width: 870px){.menu--french-chic .menu__path{margin:.2rem 0}}.menu--french-chic .menu__section__title{font-weight:bold}@media screen and (max-width: 870px){.menu--french-chic .menu__section__title:hover hr{background:none}}.menu--french-chic .menu__section__name{margin:.5rem 0}.menu--french-chic .menu__starter:hover hr{background-color:#c67412;animation:underline-anim 2s}.menu--french-chic .menu__dish{color:#a56799}.menu--french-chic .menu__dish:hover hr{background-color:#a56799;animation:underline-anim 2s}.menu--french-chic .menu__dessert{color:#6e4ccc}.menu--french-chic .menu__dessert:hover hr{background-color:#6e4ccc;animation:underline-anim 2s}.menu--taste-buds-delight{background-color:#f8f8f8;color:#000;font-family:"Segoe print","Architects Daughter",cursive,sans-serif}.menu--taste-buds-delight .menu__heading{background:-webkit-linear-gradient(90deg, #0925DB, #42A5FF);background:linear-gradient(90deg, #0925DB, #42A5FF);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:"Dancing Script",cursive;font-size:4rem}@media screen and (max-width: 870px){.menu--taste-buds-delight .menu__heading{font-size:3rem}}@media screen and (max-width: 470px){.menu--taste-buds-delight .menu__heading{font-size:2rem}}.menu--taste-buds-delight .menu__section__title:hover hr{background-color:#000;animation:underline-anim 2s}@media screen and (max-width: 870px){.menu--taste-buds-delight .menu__section__title{font-size:1.1rem}.menu--taste-buds-delight .menu__section__title:hover hr{background:none}}.menu--palette-of-taste{background-color:#f9fff9;color:#000;font-family:"Segoe print","Architects Daughter",cursive,sans-serif}.menu--palette-of-taste .menu__heading{background:-webkit-linear-gradient(90deg, #3D923A, #BEFF7F);background:linear-gradient(90deg, #3D923A, #BEFF7F);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:"Kaushan Script",cursive;font-size:4rem}@media screen and (max-width: 870px){.menu--palette-of-taste .menu__heading{font-size:3rem}}@media screen and (max-width: 470px){.menu--palette-of-taste .menu__heading{font-size:2rem}}.menu--palette-of-taste .menu__section__title:hover hr{background-color:#000;animation:underline-anim 2s}@media screen and (max-width: 870px){.menu--palette-of-taste .menu__section__title{font-size:1.1rem}.menu--palette-of-taste .menu__section__title:hover hr{background:none}}.legal-notice__content p{padding:0 2rem;text-align:justify}/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/*logo-font et primary-font*/
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+/*enchanted-note font*/
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+/*french-chic font*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+/*taste-buds-delight font*/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+/*palette-of-taste font*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*french-chic menu-font*/
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/*alternative Segoe Print*/
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(-1px, -2px);
+  }
+  20% {
+    transform: translate(-3px, 0px);
+  }
+  30% {
+    transform: translate(3px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(-3px, 1px);
+  }
+  70% {
+    transform: translate(3px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  90% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(1px, -2px);
+  }
+}
+@keyframes dots {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes underline-anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+body {
+  min-height: 100vh;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body h1 {
+  color: #fdcb46;
+  text-align: center;
+  margin-top: 0;
+}
+body a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #559c84;
+  color: #fdcb46;
+  padding: 1rem 0;
+}
+.header__logo {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0 4.5rem 0;
+}
+.container__heading {
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 748px;
+  min-height: 1058px;
+  margin: 1.5rem;
+  padding: 0 2rem;
+  -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
+  box-shadow: 0 0 10px 3px #D8D8D8;
+}
+@media screen and (max-width: 870px) {
+  .menu {
+    width: 85%;
+    margin: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+.menu__header {
+  margin: 3rem 0;
+}
+@media screen and (max-width: 870px) {
+  .menu__header {
+    margin: 2rem 0;
+  }
+}
+.menu__heading {
+  margin: 0;
+  padding: 0 1rem;
+  font-weight: normal;
+}
+.menu__content {
+  width: 100%;
+}
+.menu__path {
+  width: 30%;
+}
+.menu__path svg {
+  width: 100%;
+}
+.menu__section__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media screen and (max-width: 870px) {
+  .menu__section__heading {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu__section__title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+.menu__section__title hr {
+  margin: 0;
+  height: 2px;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (max-width: 870px) {
+  .menu__section__title {
+    font-size: 1rem;
+  }
+}
+.menu__section__name {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+@media screen and (max-width: 470px) {
+  .menu__section__name {
+    font-size: 0.9rem;
+  }
+}
+.menu__section__price {
+  margin: 0;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 470px) {
+  .menu__section__price {
+    font-size: 1rem;
+  }
+}
+.menu__section ul {
+  list-style-type: none;
+  padding: 0 4rem;
+  margin: 1.8rem 0 4rem 0;
+}
+@media screen and (max-width: 870px) {
+  .menu__section ul {
+    margin: 0.9rem 0 2rem 0;
+    padding: 0;
+  }
+}
+.menu__section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 870px) {
+  .menu__section li {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu__footer__heading {
+  margin: 0;
+}
+.menu__footer .semiquaver {
+  width: 10%;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #559c84;
+  padding: 0.8rem 0;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 470px) {
+  .footer {
+    font-size: 0.96rem;
+  }
+}
+.footer .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.footer .nav__link {
+  color: #fdcb46;
+}
+.footer .nav__link:hover {
+  animation: wiggle 1s infinite;
+}
+
+form {
+  width: 460px;
+  background-color: #559c84;
+  border: solid 2px #fdcb46;
+  border-radius: 50px;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  justify-content: center;
+}
+form div label {
+  padding-bottom: 1rem;
+  color: #fdcb46;
+}
+form div input {
+  border: solid 2px #fdcb46;
+}
+form div textarea {
+  height: 150px;
+  border: solid 2px #fdcb46;
+}
+form .submit {
+  width: 70%;
+  background-color: #fdcb46;
+  color: #559c84;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  padding: 0.2rem 2rem 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
+  align-self: center;
+}
+@media screen and (max-width: 470px) {
+  form .submit {
+    font-size: 1.04rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  form {
+    width: 90%;
+  }
+}
+
+.menu__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 870px) {
+  .menu__grid {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.menu__prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 500px;
+  max-height: 500px;
+  margin: 1.5rem;
+  -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
+  box-shadow: 0 0 10px 3px #D8D8D8;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu__prev .transition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 500ms;
+}
+.menu__prev .transition:hover {
+  opacity: 0.8;
+  transform: scale(1.25);
+}
+@media screen and (max-width: 870px) {
+  .menu__prev {
+    width: 90%;
+    margin: 1rem;
+  }
+}
+.menu__prev .menu__heading {
+  margin: 0 0 1rem 0;
+  padding: 0 1rem;
+}
+.menu__prev .menu__word {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.menu__prev--enchanted-note {
+  background-color: #FCDFDB;
+  color: #3D1319;
+  font-family: "Segoe print", "Architects Daughter", cursive, sans-serif;
+}
+.menu__prev--enchanted-note .menu__heading, .menu__prev--enchanted-note .menu__footer__heading {
+  font-family: "Devonshire", cursive;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.menu__prev--enchanted-note .menu__word {
+  text-transform: uppercase;
+}
+.menu__prev--enchanted-note figure {
+  margin: 0;
+  width: 20%;
+}
+.menu__prev--enchanted-note figure .semiquaver {
+  width: 100%;
+}
+.menu__prev--french-chic {
+  background-color: #FFF5FE;
+  color: #C67412;
+  font-family: "Noto Serif", serif;
+}
+.menu__prev--french-chic .menu__heading {
+  background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
+  background: linear-gradient(90deg, #E38913, #8F5BFE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+@media screen and (max-width: 470px) {
+  .menu__prev--french-chic .menu__heading {
+    font-size: 1.3rem;
+  }
+}
+.menu__prev--taste-buds-delight {
+  background-color: #F8F8F8;
+  color: black;
+  font-family: "Segoe print", "Architects Daughter", cursive, sans-serif;
+}
+.menu__prev--taste-buds-delight .menu__heading {
+  background: -webkit-linear-gradient(90deg, #0925DB, #42A5FF);
+  background: linear-gradient(90deg, #0925DB, #42A5FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+.menu__prev--taste-buds-delight .menu__word {
+  color: #0887FB;
+  font-weight: normal;
+}
+.menu__prev--palette-of-taste {
+  background-color: #f9fff9;
+  color: black;
+  font-family: "Segoe print", "Architects Daughter", cursive, sans-serif;
+}
+.menu__prev--palette-of-taste .menu__heading {
+  background: -webkit-linear-gradient(90deg, #3D923A, #BEFF7F);
+  background: linear-gradient(90deg, #3D923A, #BEFF7F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.menu__prev--palette-of-taste .menu__word {
+  color: #72BF56;
+  font-weight: normal;
+}
+
+button {
+  background-color: #559c84;
+  color: #fdcb46;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  padding: 0.2rem 2rem 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
+}
+@media screen and (max-width: 470px) {
+  button {
+    font-size: 1.04rem;
+  }
+}
+button span {
+  font-size: 1.7rem;
+  display: inline-block;
+  animation: dots 2s ease-in-out infinite;
+}
+button span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+button span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.menu--enchanted-note {
+  background-color: #FCDFDB;
+  color: #3D1319;
+  font-family: "Segoe print", "Architects Daughter", cursive, sans-serif;
+}
+.menu--enchanted-note .menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu--enchanted-note .menu__header figure {
+  margin: 0;
+  width: 25%;
+}
+.menu--enchanted-note .menu__header figure .semiquaver {
+  width: 100%;
+}
+.menu--enchanted-note .menu__heading {
+  font-family: "Devonshire", cursive;
+  font-size: 2.7rem;
+}
+@media screen and (max-width: 470px) {
+  .menu--enchanted-note .menu__heading {
+    font-size: 2rem;
+  }
+}
+.menu--enchanted-note .menu__section {
+  padding: 0 2.5rem;
+}
+@media screen and (max-width: 870px) {
+  .menu--enchanted-note .menu__section {
+    padding: 0;
+  }
+}
+.menu--enchanted-note .menu__section__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.menu--enchanted-note .menu__section__title:hover hr {
+  background-color: #3D1319;
+  animation: underline-anim 2s;
+}
+@media screen and (max-width: 870px) {
+  .menu--enchanted-note .menu__section__title {
+    font-size: 1.1rem;
+  }
+  .menu--enchanted-note .menu__section__title:hover hr {
+    background: none;
+  }
+}
+.menu--enchanted-note .menu__section__price {
+  font-weight: bold;
+}
+.menu--enchanted-note .menu__section ul {
+  padding: 0;
+}
+.menu--enchanted-note .menu__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.menu--enchanted-note .menu__footer__heading {
+  font-family: "Devonshire", cursive;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.menu--enchanted-note .menu__footer figure {
+  margin: 0;
+  width: 10%;
+}
+.menu--enchanted-note .menu__footer figure .semiquaver {
+  width: 100%;
+}
+
+.menu--french-chic {
+  background-color: #FFF5FE;
+  color: #C67412;
+  font-family: "Noto Serif", serif;
+}
+.menu--french-chic .menu__header {
+  margin: 4rem 0;
+}
+@media screen and (max-width: 870px) {
+  .menu--french-chic .menu__header {
+    margin: 3rem 0 2rem 0;
+  }
+}
+.menu--french-chic .menu__heading {
+  background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
+  background: linear-gradient(90deg, #E38913, #8F5BFE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 2.3rem;
+}
+@media screen and (max-width: 870px) {
+  .menu--french-chic .menu__heading {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .menu--french-chic .menu__heading {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 870px) {
+  .menu--french-chic .menu__path {
+    margin: 0.2rem 0;
+  }
+}
+.menu--french-chic .menu__section__title {
+  font-weight: bold;
+}
+@media screen and (max-width: 870px) {
+  .menu--french-chic .menu__section__title:hover hr {
+    background: none;
+  }
+}
+.menu--french-chic .menu__section__name {
+  margin: 0.5rem 0;
+}
+.menu--french-chic .menu__starter:hover hr {
+  background-color: #C67412;
+  animation: underline-anim 2s;
+}
+.menu--french-chic .menu__dish {
+  color: #A56799;
+}
+.menu--french-chic .menu__dish:hover hr {
+  background-color: #A56799;
+  animation: underline-anim 2s;
+}
+.menu--french-chic .menu__dessert {
+  color: #6E4CCC;
+}
+.menu--french-chic .menu__dessert:hover hr {
+  background-color: #6E4CCC;
+  animation: underline-anim 2s;
+}
+
+.menu--taste-buds-delight {
+  background-color: #F8F8F8;
+  color: black;
+  font-family: "Segoe print", "Architects Daughter", cursive, sans-serif;
+}
+.menu--taste-buds-delight .menu__heading {
+  background: -webkit-linear-gradient(90deg, #0925DB, #42A5FF);
+  background: linear-gradient(90deg, #0925DB, #42A5FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+@media screen and (max-width: 870px) {
+  .menu--taste-buds-delight .menu__heading {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .menu--taste-buds-delight .menu__heading {
+    font-size: 2rem;
+  }
+}
+.menu--taste-buds-delight .menu__section__title:hover hr {
+  background-color: black;
+  animation: underline-anim 2s;
+}
+@media screen and (max-width: 870px) {
+  .menu--taste-buds-delight .menu__section__title {
+    font-size: 1.1rem;
+  }
+  .menu--taste-buds-delight .menu__section__title:hover hr {
+    background: none;
+  }
+}
+
+.menu--palette-of-taste {
+  background-color: #f9fff9;
+  color: black;
+  font-family: "Segoe print", "Architects Daughter", cursive, sans-serif;
+}
+.menu--palette-of-taste .menu__heading {
+  background: -webkit-linear-gradient(90deg, #3D923A, #BEFF7F);
+  background: linear-gradient(90deg, #3D923A, #BEFF7F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+  font-size: 4rem;
+}
+@media screen and (max-width: 870px) {
+  .menu--palette-of-taste .menu__heading {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .menu--palette-of-taste .menu__heading {
+    font-size: 2rem;
+  }
+}
+.menu--palette-of-taste .menu__section__title:hover hr {
+  background-color: black;
+  animation: underline-anim 2s;
+}
+@media screen and (max-width: 870px) {
+  .menu--palette-of-taste .menu__section__title {
+    font-size: 1.1rem;
+  }
+  .menu--palette-of-taste .menu__section__title:hover hr {
+    background: none;
+  }
+}
+
+.legal-notice__content p {
+  padding: 0 2rem;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=style.css.map */
