@@ -28,17 +28,36 @@
         }
         &__section {
             &__title {
-            font-weight: bold;
+                font-weight: bold;
+                @media screen and (max-width: 870px) {
+                    &:hover hr {
+                        background: none;
+                    }
+                }
             }
             &__name {
                 margin: 0.5rem 0;
             }
         }
+        &__starter {
+            &:hover hr {
+                background-color: map-get($menu-style, primary-font-color);
+                animation: underline-anim 2s;  
+            }
+        }
         &__dish {
-            color: map-get($menu-style, menu-dish-color);                        
+            color: map-get($menu-style, menu-dish-color);
+            &:hover hr {
+                background-color: map-get($menu-style, menu-dish-color);
+                animation: underline-anim 2s;  
+            }                       
         }
         &__dessert {
             color: map-get($menu-style, menu-dessert-color);
+            &:hover hr {
+                background-color: map-get($menu-style, menu-dessert-color);
+                animation: underline-anim 2s;  
+            }
         }
     }
 }

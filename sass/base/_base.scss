@@ -3,4 +3,12 @@ body {
     margin: auto;
     box-sizing: border-box;
     font-family: $primary-font;
+    h1 {
+        color: $primary-font-color;
+        text-align: center;
+        margin-top: 0;
+    }
+    a {
+        text-decoration: none;
+    }
 }

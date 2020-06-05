@@ -13,7 +13,6 @@
         justify-content: space-between;
         padding: 0 1rem;
         &__link {
-            text-decoration: none;
             color: $primary-font-color;
             &:hover {
                 animation: wiggle 1s infinite;

@@ -1,0 +1,44 @@
+form {
+    width: 460px;
+    background-color: $primary-color;
+    border: solid 2px $primary-font-color;
+    border-radius: 50px;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+    font-size: map-get($font-sizes, p);
+    div {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        justify-content: center;
+        label {
+            padding-bottom:1rem;
+            color: $primary-font-color;
+            //font-weight: bold;
+        }
+        input {
+            border: solid 2px $primary-font-color; 
+        }
+        textarea {
+            height: 150px;
+            border: solid 2px $primary-font-color;
+        }
+    }
+    .submit {
+        width: 70%;
+        background-color: $primary-font-color;
+        color: $primary-color;
+        font-family: $primary-font;
+        font-size: map-get($font-sizes, p);
+        padding: 0.2rem 2rem 0.5rem 2rem;
+        border-radius: 10px;
+        border: none;
+        align-self: center;
+        @media screen and (max-width: 470px) {
+            font-size: map-get($font-sizes, p) *0.8;
+        }
+    }
+    @media screen and (max-width: 470px) {
+        width: 90%;        
+    }
+}

@@ -31,8 +31,15 @@
             &__title {
                 font-size: 1.4rem;
                 font-weight: bold;
+                &:hover hr {
+                    background-color: map-get($menu-style, primary-font-color);
+                    animation: underline-anim 2s;  
+                }
                 @media screen and (max-width: 870px) {
                     font-size: 1.1rem;
+                    &:hover hr {
+                        background: none;
+                    }
                 }
             }
             &__price {

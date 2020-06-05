@@ -15,5 +15,19 @@
                 font-size: 2rem;
             }
         }
+        &__section {
+            &__title {
+                &:hover hr {
+                    background-color: map-get($menu-style, primary-font-color);
+                    animation: underline-anim 2s;  
+                }
+                @media screen and (max-width: 870px) {
+                    font-size: 1.1rem;
+                    &:hover hr {
+                        background: none;
+                    }
+                }
+            }
+        }
     }
 }
